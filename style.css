@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+}
+.option-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    margin: 0em;
+    width: 70vw;
+    padding: 1em;
+    background-color: #1215;
+    color: #fffefe;
+    border: none;
+    border-bottom: 0.1em solid #fff;
+}
+select:focus{
+    border: none;
+}
+img{
+    visibility: hidden;
+    filter: blur(25px);
+    margin: 0.5em;
+    padding: 1em;
+    width: 15rem;
+    border-radius: 10%;
+    opacity: 1;
+}
+#err{
+    color: #f00;
+    display: block;
+}
+.beat {
+    animation : animi 1s infinite;
+}
+.fade{
+    animation: animi 1s ease-in-out;
+}
+@keyframes animi {
+    0%{
+        opacity: 0.1;
+    }
+    
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}

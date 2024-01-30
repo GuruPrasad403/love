@@ -52,7 +52,7 @@ values.addEventListener("blur", ()=>{
         img.style.width="19rem"
         img.style.filter="blur(0px)"
         void img.offsetWidth;
-        img.classList.add("fade");
+        img.classList.add("fade")
         setTimeout(()=>{
             img.classList.remove("fade")
         },2000)

@@ -47,12 +47,12 @@ values.addEventListener("blur", ()=>{
     }
     else if(values.value =='2140'){
         img.classList.remove("beat")
-        img.classList.add("fade")
         img.setAttribute("src",`./love.png`)
         img.style.visibility = "visible"
         img.style.width="19rem"
         img.style.filter="blur(0px)"
         void img.offsetWidth;
+        img.classList.add("fade");
         setTimeout(()=>{
             img.classList.remove("fade")
         },2000)
